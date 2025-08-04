@@ -17,7 +17,7 @@ The intended use of this macro is for screening of lectin activity in raw or coo
 
 **Hemagglutination_Macro_Results_Template.xlsx** is an Excel template that can be used for data collection and summary. 
 
-*To download the files listed above, click on the green code button in the top right and choose the **"download zip"** option.*
+*To download the files listed above, click on the green code button in the top right and choose the **"Download ZIP"** option. The downloaded file will be labeled **hemagglutination-main.zip**. Unzip the file and all files contained in this repo should be listed under the folder labeled **hemagglutination-main**. Do not unzip the file **12_Well_RoiSet.zip**, leave it in its compressed zip file format as ImageJ expects the ROI set to be a single zip file and not individual .roi files.*
 
 ## Companion Videos
 The following YouTube video links are provided showing how to perform the hemagglutination assay in a 96 well round bottom plate using defibrinated rabbit red blood cells, creating a 12 well ROI set in ImageJ, setting the scale and using the ImageJ macro for analyzing hemagglutination plate images.
