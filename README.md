@@ -32,5 +32,5 @@ The following YouTube video links are provided showing how to perform the hemagg
 
 ## ImageJ
 ImageJ is freely available image analysis software for Mac, Linux and Windows.  
-[Download ImageJ](https://imagej.net/ij/download.html)
+[**Download ImageJ**](https://imagej.net/ij/download.html)
 
