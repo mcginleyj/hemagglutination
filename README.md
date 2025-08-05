@@ -4,7 +4,7 @@ All of the files in this repo can be downloaded in a single zip file. Click on t
 
 ![Alt text](https://github.com/mcginleyj/hemagglutination/blob/main/Code_Options.png "Code Options Screenshot")
 
-**IMPORTANT**
+**IMPORTANT**  
 Read the **Hemagglutination_Macro_Manual.pdf** prior to using the macro!  
 
 ## Introduction
