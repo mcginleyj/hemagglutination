@@ -1,7 +1,8 @@
 # Hemagglutination Macro for ImageJ
 ## TL;DR
-All of the files in this repo can be downloaded in a single zip file. Click on the **green code button** in the upper right corner of the page and choose the **"Download ZIP"** option at the bottom of the list. This will download a single zip file named **"hemagglutination-main"**. Unzip the file and all files contained in this repo should be listed under the file folder labeled **hemagglutination-main**. Do not unzip the file **12_Well_RoiSet.zip**, leave it in its compressed zip file format as ImageJ macro expects the ROI set to be a single zip file and not individual .roi files.
-<img src="https://github.com/mcginleyj/hemagglutination/blob/main/Code_Options.png">
+All of the files in this repo can be downloaded in a single zip file. Click on the **green code button** at the top of this page and choose the **"Download ZIP"** option at the bottom of the list. This will download a single zip file named **"hemagglutination-main"**. Unzip the file and all files contained in this repo should be listed under the file folder labeled **hemagglutination-main**. Do not unzip the file **12_Well_RoiSet.zip**, leave it in its compressed zip file format as ImageJ macro expects the ROI set to be a single zip file and not individual .roi files.
+
+![Alt text](https://github.com/mcginleyj/hemagglutination/blob/main/Code_Options.png "Code Options Screenshot")
 
 **IMPORTANT**
 Read the **Hemagglutination_Macro_Manual.pdf** prior to using the macro!  
@@ -23,6 +24,10 @@ The intended use of this macro is for screening of lectin activity in raw or coo
 <img src="https://github.com/mcginleyj/hemagglutination/blob/main/Hemagglutination_Composite_Plate.jpg" width="600">
 
 **Hemagglutination_Macro_Results_Template.xlsx** is an Excel template that can be used for data collection and summary. 
+
+Other Files
+
+**Code_Options.png** a screenshot of the avaialble downloding options for this repo. 
 
 **.gitignore** contains a listing of files to be ignored by git, i.e. files not uploaded to this repo.
 
