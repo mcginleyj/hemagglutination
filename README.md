@@ -1,5 +1,12 @@
 # Hemagglutination Macro for ImageJ
+## TL;DR
+All of the files in this repo can be downloaded in a single zip file. Click on the **green code button** in the upper right corner of the page and choose the **"Download ZIP"** option at the bottom of the list. This will download a single zip file named **"hemagglutination-main"**. Unzip the file and all files contained in this repo should be listed under the file folder labeled **hemagglutination-main**. Do not unzip the file **12_Well_RoiSet.zip**, leave it in its compressed zip file format as ImageJ macro expects the ROI set to be a single zip file and not individual .roi files.
+<img src="https://github.com/mcginleyj/hemagglutination/blob/main/Code_Options.png">
 
+**IMPORTANT**
+Read the **Hemagglutination_Macro_Manual.pdf** prior to using the macro!  
+
+## Introduction
 The intended use of this macro is for screening of lectin activity in raw or cooked dry bean samples and other pulse crops. Interpretation of hemagglutination assay results by eye can be quite subjective with high interobserver variability when attempting to determine positivity based on hemagglutination units (HAU). This macro provides an objective alternative by measuring the area (mm2) of agglutinated red blood cells in a single well, one row of 12 wells at a time, in 96 well round bottom plates. A region of interest (ROI) set consisting of a 12 well overlay is moved in unison by the user from row to row as the macro loops through analysis until all rows have been read. 
 
 ## Files
@@ -17,12 +24,14 @@ The intended use of this macro is for screening of lectin activity in raw or coo
 
 **Hemagglutination_Macro_Results_Template.xlsx** is an Excel template that can be used for data collection and summary. 
 
-*To download the files listed above, click on the green code button in the top right and choose the **"Download ZIP"** option. The downloaded file will be labeled **hemagglutination-main.zip**. Unzip the file and all files contained in this repo should be listed under the folder labeled **hemagglutination-main**. Do not unzip the file **12_Well_RoiSet.zip**, leave it in its compressed zip file format as ImageJ expects the ROI set to be a single zip file and not individual .roi files.*
+**.gitignore** contains a listing of files to be ignored by git, i.e. files not uploaded to this repo.
+
+**README.MD** the readme markdown file that you are reading right now. 
 
 ## Companion Videos
 The following YouTube video links are provided showing how to perform the hemagglutination assay in a 96 well round bottom plate using defibrinated rabbit red blood cells, creating a 12 well ROI set in ImageJ, setting the scale and using the ImageJ macro for analyzing hemagglutination plate images.
 
-*Note: to open the videos in a new tab hold the CMD (Mac) or CTRL (Win) key down and click the link.*
+*Note: to open the videos in a new tab hold the CMD (Mac) or CTRL (Win) key down and click the link. Pro Tip: you can speed up playback of the videos by clicking on settings (gear icon) in YouTube for each video and change the playback speed from normal to 1.5 or higher.*
 
 [**Lectin Hemagglutination Assay**](https://www.youtube.com/watch?v=FWOMhOlLiug) 
 
@@ -33,4 +42,5 @@ The following YouTube video links are provided showing how to perform the hemagg
 ## ImageJ
 ImageJ is freely available image analysis software for Mac, Linux and Windows.  
 [**Download ImageJ**](https://imagej.net/ij/download.html)
+*Note: For those using Macs with Apple Silicon (ARM) Mx chips, if the macro is not functioning as expected according to the manual, quit the ImageJ app, start ImageJ again and reload the macro.*  
 
