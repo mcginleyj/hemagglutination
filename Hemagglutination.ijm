@@ -142,12 +142,12 @@ setAutoThreshold("Default no-reset");
 setThreshold(0, MaxThresh, "raw");
 if (ManThresh == 1) {
    print("Adjust the threshold manually if needed.");
-   print("If you already measured this row of 12 wells and saw the following message: ");
-   print("WARNING: < 12 rows of data! Try adjusting the threshold by keeping the top ");
-   print("slider set at 0, all the way to left, and move the 2nd slider only. ");
-   print("Try adjusting the slider to a lower value first and measure. You can measure ");
-   print("the same row of wells as many times as needed until all 12 well measurements ");
-   print("have been obtained. ");
+   print("If you already measured this row of 12 wells and saw the following: ");
+   print("WARNING: < 12 rows of data! Try adjusting the threshold by keeping ");
+   print("the top slider set at 0, all the way to left, and move the 2nd ");
+   print("slider only. Adjust the slider to a lower value first and measure. ");
+   print("You can measure the same row of wells as many times as needed until ");
+   print("all 12 well measurements have been obtained. ");
    run("Threshold...");
    waitForUser("Adjust the threshold if necessary and then click OK to continue.");
    close("Threshold");
