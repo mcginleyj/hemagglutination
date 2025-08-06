@@ -3,8 +3,9 @@ WellDist = 49;       // Diameter of well bottom measured in pixels. Must be dete
 KnownDist = 6.4;     // Known diameter of the well bottom in mm according to plate manufacturer spec sheet.
 RecWidth = 200;      // Initial rectangle width for overlay used to crop image.  
 RecHeight = 150;     // Initial rectangle height for overlay used to crop image.
+ManThresh = 1;       // Manual threshold adjustment is enabled (1) by default. To disable, set equal to 0.
 MaxThresh = 230;     // Max image threshold value using a grayscale range of 0-255.
-CodeVer = "v1.0.1";  // Current code version of this macro.
+CodeVer = "v1.0.2";  // Current code version of this macro.
 RoiZip = "12_Well_RoiSet.zip";  // Name of zip file containing the 12 ROI image overlays, one for each well in a plate row. 
 PartSizeRange = "1-Infinity";   // Particle size range.
 PartCircRange = "0.20-1.00";    // Particle circular range.
@@ -129,7 +130,7 @@ print("Click and drag any of the 12 region of interest (ROI) overlay circles");
 print("to move the entire set and adjust the position so that each circle");
 print("is in the center of each well." + "\n");
 print("Drag the Action Required prompt window and ROI Manager window");
-print("out of the way if needed."+ "\n");
+print("out of the way if needed." + "\n");
 waitForUser("Adjust ROI position by dragging any of one of the 12 well overlay circles.");
 run("Create Mask");
 imageCalculator("Subtract create", "Mask","Original Plate BW.jpg");
@@ -138,9 +139,19 @@ saveAs("Jpeg", MyFilePath + "Result of Mask.jpg");
 close;
 open(MyFilePath + "Result of Mask.jpg");
 setAutoThreshold("Default no-reset");
-//run("Threshold...");
 setThreshold(0, MaxThresh, "raw");
-//waitForUser("Adjust threshold");
+if (ManThresh == 1) {
+   print("Adjust the threshold manually if needed.");
+   print("If you already measured this row of 12 wells and saw the following message: ");
+   print("WARNING: < 12 rows of data! Try adjusting the threshold by keeping the top ");
+   print("slider set at 0, all the way to left, and move the 2nd slider only. ");
+   print("Try adjusting the slider to a lower value first and measure. You can measure ");
+   print("the same row of wells as many times as needed until all 12 well measurements ");
+   print("have been obtained. ");
+   run("Threshold...");
+   waitForUser("Adjust the threshold if necessary and then click OK to continue.");
+   close("Threshold");
+}
 run("Analyze Particles...", "size=" + PartSizeRange + " circularity=" + PartCircRange + " show=Outlines display exclude");
 // Check if the "Results" table is empty
 if (nResults == 0) {
