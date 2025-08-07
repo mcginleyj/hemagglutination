@@ -123,6 +123,8 @@ roiManager("Add");
 roiManager("Select", newArray(0,1,2,3,4,5,6,7,8,9,10,11));
 roiManager("Delete");
 roiManager("Select", 0);
+roiManager("Deselect");
+roiManager("Select", 0);
 // Start of analysis loop
 do {
 print("\\Clear");
@@ -141,13 +143,7 @@ open(MyFilePath + "Result of Mask.jpg");
 setAutoThreshold("Default no-reset");
 setThreshold(0, MaxThresh, "raw");
 if (ManThresh == 1) {
-   print("Adjust the threshold manually if needed.");
-   print("If you already measured this row of 12 wells and saw the following: ");
-   print("WARNING: < 12 rows of data! Try adjusting the threshold by keeping ");
-   print("the top slider set at 0, all the way to left, and move the 2nd ");
-   print("slider only. Adjust the 2nd slider to a lower value and measure. ");
-   print("You can measure the same row of wells as many times as needed until ");
-   print("all 12 well measurements have been obtained. ");
+   print("Adjust the threshold manually, if needed.");
    run("Threshold...");
    waitForUser("Adjust the threshold if necessary and then click OK to continue.");
    close("Threshold");
@@ -165,10 +161,16 @@ if (nResults == 0) {
     String.copyResults;
    if (nResults < 12) {
       print("\n" + "WARNING: there are < 12 rows of data!");
-      print("Results have been copied to the clipboard");
-      print("for you paste elsewhere. However, it is recommended");
-      print("that you adjust the ROI position and try again."); 
-      print("\n" + "Rows of data should equal 12.");
+      print("Rows of data should equal 12." + "\n");
+      print("Results have been copied to the clipboard for you to paste ");
+      print("elsewhere. However, it is recommended that you slightly ");
+      print("readjust the ROI position and try again." + "\n"); 
+      print("You can also try adjusting the threshold by keeping the top");
+      print("slider set at 0, all the way to left, and move the 2nd slider");
+      print("only. Adjust the 2nd slider to a lower value, e.g. 220 and ");
+      print("and measure. Remeasure the same row of wells changing the  ");
+      print("threshold as many times as needed until all 12 well measurements ");
+      print("are obtained.");
       waitForUser("WARNING: < 12 rows of data!");
       //Table.deleteRows(0, 99);
    }   

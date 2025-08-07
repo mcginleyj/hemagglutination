@@ -49,3 +49,12 @@ ImageJ is freely available image analysis software for Mac, Linux and Windows.
 [**Download ImageJ**](https://imagej.net/ij/download.html)
 *Note: For those using Macs with Apple Silicon (ARM) Mx chips, if the macro is not functioning as expected according to the manual, quit the ImageJ app, start ImageJ again and reload the macro.*  
 
+## Change Log
+### 1.0.0 
+Initial macro code.
+### 1.0.1 
+Added image rotation.
+Added image crop.
+### 1.0.2 
+Added manual threshold.
+Fixed ROI set not selected by adding a ROI deselect/select toggle. 
