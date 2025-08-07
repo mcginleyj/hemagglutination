@@ -145,7 +145,7 @@ if (ManThresh == 1) {
    print("If you already measured this row of 12 wells and saw the following: ");
    print("WARNING: < 12 rows of data! Try adjusting the threshold by keeping ");
    print("the top slider set at 0, all the way to left, and move the 2nd ");
-   print("slider only. Adjust the slider to a lower value first and measure. ");
+   print("slider only. Adjust the 2nd slider to a lower value and measure. ");
    print("You can measure the same row of wells as many times as needed until ");
    print("all 12 well measurements have been obtained. ");
    run("Threshold...");
