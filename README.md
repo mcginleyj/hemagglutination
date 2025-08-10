@@ -1,11 +1,15 @@
 # Hemagglutination Macro for ImageJ
 ## TL;DR
-All of the files in this repo can be downloaded in a single zip file. Click on the **green code button** at the top of this page and choose the **"Download ZIP"** option at the bottom of the list. This will download a single zip file named **"hemagglutination-main"**. Unzip the file and all files contained in this repo should be listed under the file folder labeled **hemagglutination-main**. Do not unzip the file **12_Well_RoiSet.zip**, leave it in its compressed zip file format as ImageJ macro expects the ROI set to be a single zip file and not individual .roi files.
+All of the files in this repo can be downloaded in a single zip file. Click on the **green code button** at the top of this page and choose the **"Download ZIP"** option at the bottom of the list. This will download a single zip file named **"hemagglutination-main"**. Unzip the file and all files contained in this repo should be listed under the file folder labeled **hemagglutination-main**. Do not unzip the file **12_Well_RoiSet.zip**, leave it in its compressed zip file format as ImageJ macro expects the ROI set to be a single zip file and not individual .roi files. 
 
 ![Alt text](https://github.com/mcginleyj/hemagglutination/blob/main/Code_Options.png "Code Options Screenshot")
 
 **IMPORTANT**  
 Read the **Hemagglutination_Macro_Manual.pdf** prior to using the macro!  
+
+The file, **12_Well_RoiSet.zip** in this repo is paired with the plate image file, **Hemagglutination_Composite_Plate.jpg**.  You will need to create your own **12_Well_RoiSet.zip** file using plate images that you have captured as conditions will likely vary for each user. Likewise, the scale will also need to be set according to the images that you have captured. Step-by-step tutorials for both can be found in the manual under appendix A & B, respectively. The companion video, [**Creating a 12 Well ROI Set for Analyzing Hemagglutination Plates in ImageJ**](https://www.youtube.com/watch?v=d4BtTiAVIGo), covers both of these topics. Other useful videos are listed below.   
+
+Make sure the **12_Well_RoiSet.zip** file that you have created is in the same folder with your plate images. 
 
 ## Introduction
 The intended use of this macro is for screening of lectin activity in raw or cooked dry bean samples and other pulse crops. Interpretation of hemagglutination assay results by eye can be quite subjective with high interobserver variability when attempting to determine positivity based on hemagglutination units (HAU). This macro provides an objective alternative by measuring the area (mm2) of agglutinated red blood cells in a single well, one row of 12 wells at a time, in 96 well round bottom plates. A region of interest (ROI) set consisting of a 12 well overlay is moved in unison by the user from row to row as the macro loops through analysis until all rows have been read. 
@@ -33,6 +37,8 @@ Other Files
 
 **README.MD** the readme markdown file that you are reading right now. 
 
+All of the files in this repo can be downloaded in a single zip file. Click on the **green code button** at the top of this page and choose the **"Download ZIP"** option at the bottom of the list. This will download a single zip file named **"hemagglutination-main"**. Unzip the file and all files contained in this repo should be listed under the file folder labeled **hemagglutination-main**. Do not unzip the file **12_Well_RoiSet.zip**, leave it in its compressed zip file format as ImageJ macro expects the ROI set to be a single zip file and not individual .roi files.
+
 ## Companion Videos
 The following YouTube video links are provided showing how to perform the hemagglutination assay in a 96 well round bottom plate using defibrinated rabbit red blood cells, creating a 12 well ROI set in ImageJ, setting the scale and using the ImageJ macro for analyzing hemagglutination plate images.
 
@@ -49,12 +55,12 @@ ImageJ is freely available image analysis software for Mac, Linux and Windows.
 [**Download ImageJ**](https://imagej.net/ij/download.html)
 *Note: For those using Macs with Apple Silicon (ARM) Mx chips, if the macro is not functioning as expected according to the manual, quit the ImageJ app, start ImageJ again and reload the macro.*  
 
-## Change Log
+## Changelog
 ### 1.0.0 
-Initial macro code.
+Initial release.
 ### 1.0.1 
 Added image rotation.  
 Added image crop.
 ### 1.0.2 
 Added manual threshold.  
-Fixed ROI set not selected by adding a ROI deselect/select toggle. 
+Fixed ROI set not selected.

@@ -43,7 +43,7 @@ print("\\Clear");
 print("Browse and select a 96 well hemagglutination plate image file to open." + "\n");
 print("Note: the ROI image overlay file, '12_Well_RoiSet.zip' must be located");
 print("in the same directory with the image(s). If it is not, cancel the macro,");
-print("move the file to the same directory with the plate image(s) and restart")'
+print("move the file to the same directory with the plate image(s) and restart");
 print("the macro."); 
 MyImage = File.openDialog("Select a File"); 
 open(MyImage); 
