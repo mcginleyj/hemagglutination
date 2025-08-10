@@ -7,7 +7,9 @@ All of the files in this repo can be downloaded in a single zip file. Click on t
 **IMPORTANT**  
 Read the **Hemagglutination_Macro_Manual.pdf** prior to using the macro!  
 
-The file, **12_Well_RoiSet.zip** in this repo is paired with the plate image file, **Hemagglutination_Composite_Plate.jpg**.  You will need to create your own **12_Well_RoiSet.zip** file using plate images that you have captured as conditions will likely vary for each user. Likewise, the scale will also need to be set according to the images that you have captured. Step-by-step tutorials for both can be found in the manual under appendix A & B, respectively. The companion video, [**Creating a 12 Well ROI Set for Analyzing Hemagglutination Plates in ImageJ**](https://www.youtube.com/watch?v=d4BtTiAVIGo), covers both of these topics. Other useful videos are listed below.   
+The file, **12_Well_RoiSet.zip** in this repo is paired with the image file, **Hemagglutination_Composite_Plate.jpg**.  
+
+You will need to create your own **12_Well_RoiSet.zip** file using plate images that you have captured as conditions will likely vary for each user. Likewise, the scale will also need to be set according to the images that you have captured. Step-by-step tutorials for both can be found in the manual under appendix A & B, respectively. The companion video, [**Creating a 12 Well ROI Set for Analyzing Hemagglutination Plates in ImageJ**](https://www.youtube.com/watch?v=d4BtTiAVIGo), covers both of these topics. Other useful videos are listed below.   
 
 Make sure the **12_Well_RoiSet.zip** file that you have created is in the same folder with your plate images. 
 
