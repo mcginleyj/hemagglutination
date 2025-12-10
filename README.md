@@ -70,7 +70,7 @@ Added image crop.
 Added manual threshold.  
 Fixed ROI set not selected.
 ### 1.0.3
-Macro - fixed issue where B&W the plate image was not shown after the first time through the analysis loop. 
-Excel - changed standard deviation range of mean negative control from 2SD to 3SD.
-Manual - updated to reflect changes.   
+Macro - fixed issue where B&W the plate image was not shown after the first time through the analysis loop.  
+Excel - changed standard deviation range of mean negative control from 2SD to 3SD.  
+Manual - updated to reflect changes.  
 Added link to journal article.
