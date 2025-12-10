@@ -5,7 +5,7 @@ RecWidth = 200;      // Initial rectangle width for overlay used to crop image.
 RecHeight = 150;     // Initial rectangle height for overlay used to crop image.
 ManThresh = 1;       // Manual threshold adjustment is enabled (1) by default. To disable, set equal to 0.
 MaxThresh = 230;     // Max image threshold value using a grayscale range of 0-255.
-CodeVer = "v1.0.2";  // Current code version of this macro.
+CodeVer = "v1.0.3";  // Current code version of this macro.
 RoiZip = "12_Well_RoiSet.zip";  // Name of zip file containing the 12 ROI image overlays, one for each well in a plate row. 
 PartSizeRange = "1-Infinity";   // Particle size range.
 PartCircRange = "0.20-1.00";    // Particle circular range.
@@ -127,6 +127,7 @@ roiManager("Deselect");
 roiManager("Select", 0);
 // Start of analysis loop
 do {
+selectWindow("Original Plate BW.jpg");
 print("\\Clear");
 print("Click and drag any of the 12 region of interest (ROI) overlay circles");
 print("to move the entire set and adjust the position so that each circle");
@@ -143,7 +144,9 @@ open(MyFilePath + "Result of Mask.jpg");
 setAutoThreshold("Default no-reset");
 setThreshold(0, MaxThresh, "raw");
 if (ManThresh == 1) {
-   print("Adjust the threshold manually, if needed.");
+   print("If needed, you can adjust the threshold manually by leaving the");
+   print("top slider in the threshold window set to zero and adjusting");
+   print("the bottom slider above or below the default value of " + MaxThresh + ".");
    run("Threshold...");
    waitForUser("Adjust the threshold if necessary and then click OK to continue.");
    close("Threshold");
@@ -190,6 +193,7 @@ if (nResults == 0) {
       print("in the results table is sorted by the 'X' centroid");
       print("value, i.e. X position value going from left to right,");
       print("thus matching wells 1-12 in the image.");
+      selectWindow("Results");
       waitForUser("Results data copied to clipboard. Paste into Excel or a text file then click OK to continue.");
     //Table.deleteRows(0, 99);
    }
