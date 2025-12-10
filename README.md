@@ -57,6 +57,9 @@ ImageJ is freely available image analysis software for Mac, Linux and Windows.
 [**Download ImageJ**](https://imagej.net/ij/download.html)
 *Note: For those using Macs with Apple Silicon (ARM) Mx chips, if the macro is not functioning as expected according to the manual, quit the ImageJ app, start ImageJ again and reload the macro.*  
 
+## Journal Article
+[**Thompson, H.J.; Neil, E.S.; McGinley, J.N.; Lutsiv, T. Toward Standardized Measurement of Active Phytohemagglutinin in Common Bean, Phaseolus vulgaris, L. Foods 2025, 14, 4247. https://doi.org/10.3390/foods14244247.**](https://doi.org/10.3390/foods14244247) 
+
 ## Changelog
 ### 1.0.0 
 Initial release.
@@ -66,3 +69,8 @@ Added image crop.
 ### 1.0.2 
 Added manual threshold.  
 Fixed ROI set not selected.
+### 1.0.3
+Macro - fixed issue where B&W the plate image was not shown after the first time through the analysis loop. 
+Excel - changed standard deviation range of mean negative control from 2SD to 3SD.
+Manual - updated to reflect changes.   
+Added link to journal article.
